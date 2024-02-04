@@ -1,4 +1,4 @@
-GET http://localhost:3001/todos 
+GET http://localhost:3001/todos HTTP/1.1
 
 ###
 
@@ -17,5 +17,9 @@ DELETE http://localhost:3001/todo/delete/65be9ff23360afafe631db08
 ###
 
 PUT http://localhost:3001/todo/complete/65be9f9d3360afafe631db05
+Content-Type: application/json
 
+{
+	"text": "Go Shopping for Milk"
+}
 
